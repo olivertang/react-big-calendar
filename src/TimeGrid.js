@@ -202,7 +202,6 @@ export default class TimeGrid extends Component {
 
     let start = range[0],
       end = range[range.length - 1]
-
     this.slots = range.length
 
     let allDayEvents = [],
@@ -226,11 +225,12 @@ export default class TimeGrid extends Component {
     })
 
     allDayEvents.sort((a, b) => sortEvents(a, b, accessors))
-
+    console.log(`step is ${this.props.step}`)
     return (
       <div
         className={cn('rbc-time-view', resources && 'rbc-time-view-resources')}
       >
+        {/* Handles date headers in Week View*/}
         <TimeGridHeader
           range={range}
           events={allDayEvents}
@@ -263,7 +263,7 @@ export default class TimeGrid extends Component {
             localizer={localizer}
             min={dates.merge(start, min)}
             max={dates.merge(start, max)}
-            step={this.props.step}
+            step={30}
             getNow={this.props.getNow}
             timeslots={this.props.timeslots}
             components={components}

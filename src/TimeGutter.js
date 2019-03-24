@@ -53,7 +53,10 @@ export default class TimeGutter extends Component {
     return (
       <div className="rbc-time-gutter rbc-time-column">
         {this.slotMetrics.groups.map((grp, idx) => {
+          console.log(`grp: ${grp} idx: ${idx}`)
+          // grp: Sun Mar 24 2019 00:00:00 GMT-0700 (Pacific Daylight Time),Sun Mar 24 2019 00:30:00 GMT-0700 (Pacific Daylight Time) idx: 0
           return (
+            // Generates the time slots on the left
             <TimeSlotGroup
               key={idx}
               group={grp}

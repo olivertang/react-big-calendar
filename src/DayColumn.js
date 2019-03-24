@@ -109,6 +109,7 @@ class DayColumn extends React.Component {
           dates.eq(date, current, 'day') && 'rbc-today'
         )}
       >
+        {/* Generates time slots within the day  */}
         {slotMetrics.groups.map((grp, idx) => (
           <TimeSlotGroup
             key={idx}
@@ -118,6 +119,8 @@ class DayColumn extends React.Component {
             components={components}
           />
         ))}
+
+        {/* Renders the events per day  */}
         <EventContainer
           localizer={localizer}
           resource={resource}

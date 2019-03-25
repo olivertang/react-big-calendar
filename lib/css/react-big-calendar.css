@@ -63,18 +63,22 @@ button.rbc-input::-moz-focus-inner {
   background: #e5e5e5;
 }
 .rbc-header {
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: #ff7675;
+  margin-right: 10px;
   overflow: hidden;
   -webkit-flex: 1 0 0%;
       -ms-flex: 1 0 0%;
           flex: 1 0 0%;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding: 0 3px;
+  padding: 3px 3px;
   text-align: center;
   vertical-align: middle;
   font-weight: bold;
   font-size: 90%;
-  min-height: 0;
+  min-height: 20px;
   border-bottom: 1px solid #DDD;
 }
 .rbc-header + .rbc-header {
@@ -99,7 +103,7 @@ button.rbc-input::-moz-focus-inner {
   z-index: 4;
 }
 .rbc-today {
-  background-color: #eaf6ff;
+  background-color: #ff7675;
 }
 .rbc-toolbar {
   display: -webkit-flex;
@@ -339,9 +343,6 @@ button.rbc-input::-moz-focus-inner {
       -ms-flex: 1 0 0%;
           flex: 1 0 0%;
 }
-.rbc-day-bg + .rbc-day-bg {
-  border-left: 1px solid #DDD;
-}
 .rbc-rtl .rbc-day-bg + .rbc-day-bg {
   border-left-width: 0;
   border-right: 1px solid #DDD;
@@ -431,6 +432,7 @@ button.rbc-input::-moz-focus-inner {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100%;
+  border-radius: 5px;
 }
 .rbc-time-column .rbc-timeslot-group {
   -webkit-flex: 1;
@@ -457,6 +459,9 @@ button.rbc-input::-moz-focus-inner {
 }
 .rbc-day-slot {
   position: relative;
+  border-radius: 5px;
+  background-color: #f5f6fa;
+  margin-right: 10px;
 }
 .rbc-day-slot .rbc-events-container {
   bottom: 0;
@@ -504,6 +509,7 @@ button.rbc-input::-moz-focus-inner {
 }
 .rbc-time-view-resources .rbc-time-gutter,
 .rbc-time-view-resources .rbc-time-header-gutter {
+  margin-right: 10px;
   position: -webkit-sticky;
   position: sticky;
   left: 0;
@@ -574,10 +580,11 @@ button.rbc-input::-moz-focus-inner {
       -ms-flex: 1;
           flex: 1;
   width: 100%;
-  border: 1px solid #DDD;
   min-height: 0;
 }
 .rbc-time-view .rbc-time-gutter {
+  margin-right: 10px;
+  background-color: #f5f6fa;
   white-space: nowrap;
 }
 .rbc-time-view .rbc-allday-cell {
@@ -607,9 +614,6 @@ button.rbc-input::-moz-focus-inner {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-.rbc-time-header.rbc-overflowing {
-  border-right: 1px solid #DDD;
-}
 .rbc-rtl .rbc-time-header.rbc-overflowing {
   border-right-width: 0;
   border-left: 1px solid #DDD;
@@ -631,13 +635,13 @@ button.rbc-input::-moz-focus-inner {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-left: 1px solid #DDD;
 }
 .rbc-rtl .rbc-time-header-content {
   border-left-width: 0;
   border-right: 1px solid #DDD;
 }
 .rbc-time-content {
+  padding-top: 10px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -648,7 +652,6 @@ button.rbc-input::-moz-focus-inner {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 100%;
-  border-top: 2px solid #DDD;
   overflow-y: auto;
   position: relative;
 }
@@ -656,9 +659,6 @@ button.rbc-input::-moz-focus-inner {
   -webkit-flex: none;
       -ms-flex: none;
           flex: none;
-}
-.rbc-time-content > * + * > * {
-  border-left: 1px solid #DDD;
 }
 .rbc-rtl .rbc-time-content > * + * > * {
   border-left-width: 0;

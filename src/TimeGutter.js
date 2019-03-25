@@ -42,7 +42,7 @@ export default class TimeGutter extends Component {
     const isNow = this.slotMetrics.dateIsInGroup(getNow(), idx)
     return (
       <span className={cn('rbc-label', isNow && 'rbc-now')}>
-        {localizer.format(value, 'timeGutterFormat')}
+        {localizer.format(value, 'h a')}
       </span>
     )
   }

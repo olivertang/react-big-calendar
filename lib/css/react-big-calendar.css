@@ -63,6 +63,7 @@ button.rbc-input::-moz-focus-inner {
   background: #e5e5e5;
 }
 .rbc-header {
+  color: white;
   margin-bottom: 5px;
   border-radius: 5px;
   background-color: #ff7675;
@@ -205,7 +206,7 @@ button.rbc-input::-moz-focus-inner {
 }
 .rbc-event {
   padding: 2px 5px;
-  background-color: #3174ad;
+  background-color: #54a0ff;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
@@ -215,7 +216,7 @@ button.rbc-input::-moz-focus-inner {
   pointer-events: none;
 }
 .rbc-event.rbc-selected {
-  background-color: #265985;
+  background-color: #2184ff;
 }
 .rbc-event-label {
   font-size: 80%;
@@ -584,7 +585,6 @@ button.rbc-input::-moz-focus-inner {
 }
 .rbc-time-view .rbc-time-gutter {
   margin-right: 10px;
-  background-color: #f5f6fa;
   white-space: nowrap;
 }
 .rbc-time-view .rbc-allday-cell {

@@ -225,7 +225,6 @@ export default class TimeGrid extends Component {
     })
 
     allDayEvents.sort((a, b) => sortEvents(a, b, accessors))
-    console.log(`step is ${this.props.step}`)
     return (
       <div
         className={cn('rbc-time-view', resources && 'rbc-time-view-resources')}

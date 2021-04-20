@@ -66,7 +66,7 @@ button.rbc-input::-moz-focus-inner {
   color: white;
   margin-bottom: 5px;
   border-radius: 5px;
-  background-color: #7d5fff;
+  background-color: #fbc531;
   margin-right: 10px;
   overflow: hidden;
   -webkit-flex: 1 0 0%;
@@ -203,8 +203,8 @@ button.rbc-input::-moz-focus-inner {
 }
 .rbc-event {
   padding: 2px 5px;
-  background-color: #54a0ff;
-  border-radius: 5px;
+  background-color: #fbc531;
+  border-radius: 12px;
   color: #fff;
   cursor: pointer;
 }
@@ -213,7 +213,7 @@ button.rbc-input::-moz-focus-inner {
   pointer-events: none;
 }
 .rbc-event.rbc-selected {
-  background-color: #2184ff;
+  background-color: #f4b405;
 }
 .rbc-event-label {
   font-size: 100%;
